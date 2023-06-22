@@ -9,4 +9,12 @@ export const ERROR_CONT = ".error-message-container";
 export const LOGIN_BTN = "[data-test='login-button']";
 export const ERROR_INFO = '[data-test="error"]';
 export const CORRECT_IMG = "#item_4_img_link > .inventory_item_img";
-export const LOGIN_SCF = ":nth-child(2) > :nth-child(1) > #inventory_container";
+export const ADD_PRODUCT1 = '[data-test="add-to-cart-sauce-labs-backpack"]';
+export const ADD_PRODUCT2 = '[data-test="add-to-cart-sauce-labs-bike-light"]';
+export const ADD_PRODUCT3 = '[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]';
+export const ADD_PRODUCT4 =
+  '[data-test="add-to-cart-sauce-labs-fleece-jacket"]';
+export const ADD_PRODUCT5 = '[data-test="add-to-cart-sauce-labs-onesie"]';
+export const ADD_PRODUCT6 =
+  '[data-test="add-to-cart-test.allthethings()-t-shirt-(red)"]';
+export const CART_QUANTITY = ".shopping_cart_badge";

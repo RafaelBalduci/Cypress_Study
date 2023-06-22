@@ -1,33 +1,36 @@
-import * as selectors from "./components";
 import * as login from "./LoginPage";
 import * as product from "./ProductsPage";
 
 describe("First automation test", () => {
   it("Login standard user", () => {
+    let timeNow = login.performanceStart();
     login.access();
-    login.fillUserS();
+    login.fillUserStandard();
     login.fillPass();
     login.login();
+    login.performanceEnd(timeNow);
     product.checkIMGCorrect();
   });
   it("Login locked user", () => {
     login.access();
-    login.fillUserL();
+    login.fillUserLock();
     login.fillPass();
     login.login();
     login.erroUserLock();
   });
   it("Login problem user", () => {
     login.access();
-    login.fillUserP();
+    login.fillUserProblem();
     login.fillPass();
     login.login();
     product.checkIMGWrong();
   });
   it("Login glicth user", () => {
+    let timeNow = login.performanceStart();
     login.access();
-    login.fillUserG();
+    login.fillUserGlicth();
     login.fillPass();
     login.login();
+    login.performanceEnd(timeNow);
   });
 });
