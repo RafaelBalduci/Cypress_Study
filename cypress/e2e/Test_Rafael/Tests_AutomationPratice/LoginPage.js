@@ -1,7 +1,7 @@
 import * as selectors from "./components";
 
 export const access = () => {
-  return cy.visit("https://www.saucedemo.com/");
+  cy.visit("https://www.saucedemo.com/");
 };
 
 export const fillUserS = () => {
