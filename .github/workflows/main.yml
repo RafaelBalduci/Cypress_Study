@@ -1,8 +1,7 @@
 name: Add Action
-on:
- push:
-   branches:
-     - main
+on: 
+ workflow_dispatch:
+ 
 jobs:
  Cypress-Test:
    runs-on: ubuntu-latest
