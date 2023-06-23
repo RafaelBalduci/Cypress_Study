@@ -1,9 +1,5 @@
 name: Add Action
-on:
- workflow_dispatch:
-  push:
-    branches:
-      - main
+on: [push, workflow_dispatch]
  
 jobs:
  Cypress-Test:
