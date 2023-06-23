@@ -13,10 +13,7 @@ export const checkIMGWrong = () => {
 };
 
 export const addProduct1 = () => {
-  for (let i = 0; i < 2; i++) {
-    cy.get(selectors.ADD_PRODUCT + i).click();
-    return i;
-  }
+  cy.get(selectors.ADD_PRODUCT1).click();
 };
 
 export const addProductMulti = () => {
