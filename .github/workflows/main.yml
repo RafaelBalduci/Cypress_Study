@@ -1,12 +1,14 @@
-name: Add Action
-on: [push, workflow_dispatch]
- 
+name: Cypress Tests
+on: [push]
 jobs:
  Cypress-Test:
    runs-on: ubuntu-latest
    steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v2
+ 
      - name: Run Cypress Test
-       uses: cypress-io/github-action@v5
+       uses: cypress-io/github-action@v4
        with:
          command: npx cypress run 'cypress/e2e/Test_Rafael/Tests_AutomationPratice/TC 01.00 - User logins.cy.js'
          browser: chrome
