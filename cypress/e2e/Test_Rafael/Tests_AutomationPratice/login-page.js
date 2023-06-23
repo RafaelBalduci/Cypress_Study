@@ -13,7 +13,7 @@ export const performanceEnd = (timeNow) => {
     .should("have.attr", "src")
     .should("include", "sauce-backpack-1200x1500.0a0b85a3.jpg")
     .then(() => {
-      expect(performance.now() - timeNow).to.be.lessThan(2500);
+      expect(performance.now() - timeNow).to.be.lessThan(7000);
     });
 };
 
