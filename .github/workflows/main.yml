@@ -10,5 +10,5 @@ jobs:
       - name: Run user-logins
         uses: cypress-io/github-action@v4
         with:
-          command: npx cypress run --spec 'cypress\e2e\Test_Rafael\Tests_AutomationPratice\products-page.js','cypress/e2e/Test_Rafael/Tests_AutomationPratice/user-logins.cy.js'
+          command: npx cypress run --spec cypress\e2e\Test_Rafael\Tests_AutomationPratice\products-page.js, cypress/e2e/Test_Rafael/Tests_AutomationPratice/user-logins.cy.js
           browser: chrome
