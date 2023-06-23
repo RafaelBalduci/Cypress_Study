@@ -1,5 +1,5 @@
-import * as login from "./LoginPage";
-import * as product from "./ProductsPage";
+import * as login from "./login-page";
+import * as product from "./products-page";
 
 describe("First automation test", () => {
   it("Login standard user", () => {
