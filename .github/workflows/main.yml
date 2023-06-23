@@ -10,5 +10,5 @@ jobs:
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
        with:
-         command: npx cypress run 'cypress/e2e/Test_Rafael/Tests_AutomationPratice/TC 01.00 - User logins.cy.js'
+         command: npx cypress run --spec 'cypress/e2e/Test_Rafael/Tests_AutomationPratice/TC 01.00 - User logins.cy.js'
          browser: chrome
