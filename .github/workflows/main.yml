@@ -16,7 +16,6 @@ jobs:
          
      - name: Run TC 01.01 - Product Adding
        uses: cypress-io/github-action@v4
-       if: Run TC 01.00 - User logins == pass
        with:
          command: npx cypress run --spec 'cypress/e2e/Test_Rafael/Tests_AutomationPratice/TC 01.01 - Product Adding.cy.js'
          browser: chrome
